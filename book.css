@@ -1,0 +1,93 @@
+@import"{{site.theme}}";
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+  body{
+    display: none;
+  }
+}
+
+
+  @media screen and (max-width: 480px) {
+    body{
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 160px;
+    }
+    .sidenav a {
+      /* padding: 8px 8px 8px 32px; */
+      text-align: center;
+      margin-bottom: 20px;
+      text-decoration: none;
+      font-size: 25px;
+      color:gray;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1  ;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  
+  .sidenav button{
+    margin: 8px 8px 8px 120px;
+    font-size: 20px;
+    font-weight:600;
+    width: 40%;
+    height: 5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:#b1a6a6;
+    background-color: rgb(27, 23, 23);
+  }
+  .sidenav button:hover{
+    box-shadow: 0px 2px 5px 0px rgb(95, 89, 89) ;
+    color: #fff;
+  }
+  
+#main {
+  transition: margin-left .5s;
+  /* padding: 16px; */
+}
+
+ main img{
+  margin-left:85px;
+  width: 50vw;
+ }
+ main h1{
+   text-align: center;
+   font-size: 20px;
+ }
+ main p{
+   text-align: center;
+   color: #818181;
+   font-size: small;
+ }
+  }
