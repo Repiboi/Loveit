@@ -1,0 +1,206 @@
+@import"{{site.theme}}";
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 480px) {
+  
+  body{
+    display: none;
+  }
+}
+
+
+  @media screen and (max-width: 480px) {
+    body{
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidenav {
+      position: fixed;
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.5);
+      background-color: black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 160px;
+    }
+    .sidenav a {
+      /* padding: 8px 8px 8px 32px; */
+      text-align: center;
+      margin-bottom: 20px;
+      text-decoration: none;
+      font-size: 25px;
+      color:gray;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1  ;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+  
+  .sidenav button{
+    margin: 8px 8px 8px 130px;
+    font-size: 20px;
+    font-weight:600;
+    width: 40%;
+    height: 5%;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:#b1a6a6;
+    background-color: rgb(27, 23, 23);
+  }
+  .sidenav button:hover{
+    box-shadow: 0px 2px 5px 0px rgb(95, 89, 89) ;
+    color: #fff;
+  }
+  
+#main {
+  transition: margin-left .5s;
+  /* padding: 16px; */
+}
+
+ main img{
+  margin-left:85px;
+  width: 50vw;
+ }
+ main h1{
+   text-align: center;
+   font-size: 20px;
+ }
+ main p{
+   text-align: center;
+   color: #818181;
+   font-size: small;
+ }
+ #main {
+  transition: margin-left .5s;
+  /* padding: 16px; */
+}
+main img{
+  margin-left: 30em;
+ }
+ .section{
+  display: flex;
+  flex-direction: row;
+ }
+ section{
+  padding-top: 5px;
+  float: right;
+ }
+ strong{
+  margin-left: 150px;
+  font-size: xx-large;
+  bottom: 0;
+  top: 20px;
+ }
+ footer{
+  position: fixed;
+  display: flex;
+  flex-direction:row;
+  border: 1px solid black;
+  padding-left: 25px;
+  padding-bottom:20px;
+  height:50px;
+  border-radius:10px;
+  background:black;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+ }
+
+ footer a{
+  color: black;
+  margin: 18px;
+  color:white;
+  width: 40px;
+ }
+ footer #plus{
+  color: rgb(180, 48, 48);
+  padding-bottom: 50px;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+    color: #fff;
+  }
+  50% {
+    transform: translateY(-10px);
+    color: #fff;
+  }
+  100% {
+    transform: translateY(0);
+    color: rgb(180, 48, 48);
+  }
+}
+ .stories{
+  left: 0;
+  cursor: pointer;
+  overflow-y: scroll;
+  overflow-y: hidden;
+  display: inline-flex;
+  width: 100%;
+  padding-left:0%;
+  margin-bottom: 10px;
+  
+}
+.stories .imagas img{
+  left: 0;
+  width: 15vw;
+  height: 10vh;
+  border-radius: 100%;
+  margin:10px ;
+  border: 2px solid black;
+}
+.post{
+  background-color:whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.post img{
+  width: 100%;
+} 
+.post .name a{
+  margin: 0;
+  color: black;
+  font-size: larger;
+  text-decoration:none ;
+}
+.post .name p{
+  margin: 0;
+  color: gray;
+}
+.post .reaction i{
+ display: flex;
+ cursor: pointer;
+}
+#count{
+  margin: 0;
+}
+  }
