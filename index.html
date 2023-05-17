@@ -6,32 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lovit</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="FortAwesome-Font-Awesome-d3a7818/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <nav>
-            <a href="index.html"><i class="fa-solid fa-home"></i> Home</a>
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
             <a href="#about"><i class="fas fa-chart-line"></i> Trending</a> 
-            <a href="book.html"><i class="fa-solid fa-bookmark"></i>  Bookmark</a>
-            <a href="#contact"><i class="fa-sharp fa-solid fa-bell"></i> Notification</a>
-            <a href="#services"><i class="fa-sharp fa-solid fa-person"></i> Developers</a>
-            <a href="#contact"><i class="fa-solid fa-gear"></i> Settings </a>
+            <a href="book.html"><i class="fas fa-bookmark"></i> Bookmark</a>
+            <a href="#contact"><i class="fas fa-bell"></i> Notification</a>
+            <a href="#services"><i class="fas fa-user-friends"></i> Developers</a>
+            <a href="#contact"><i class="fas fa-cog"></i> Settings </a>
           </nav>
-          <button id="myButton" type="submit"><i class=" fa-sharp fa-solid fa-plus"></i> Create post</button>
+          <button id="myButton" type="submit"><i class=" fas fa-plus"></i> Create post</button>
       </div><br>
        <!-- <strong>Twik</strong> -->
          
-        <section><i class="fa-solid fa-message fa-2x"></i></section>   
+        <section><i class="fas fa-comment-dots fa-2x"></i></i></section>   
         
         
         <div id="main">
           <span style="font-size:30px;cursor:pointer" onclick="openNav()"> &#9776;</span>
-        </div>
+          <hr>
+     </div>
 
-      
-      
       <div class="stories">
         <div class="imagas">
           <img src="images/1p9a7860-1531399906.jpg" alt="">
@@ -72,11 +71,11 @@
               </div>
               <img src="images/2014-Lamborghini-Gallardo.jpg" />
               <div class="reactions">
-                <i class="fa-solid fa-heart" id="icon1" onclick="increment(1)"></i>
-                <i class="fa-solid fa-comment "></i>
-                <i class="fa-solid fa-bookmark"></i>
+                <i class="far fa-heart" id="icon1" onclick="increment(1)"></i>
+                <i class="far fa-comment "></i>
+                <i class="far fa-bookmark"></i>
               </div>
-              <p><span id="count1">99</span></p>
+              <p><span id="count1">0</span></p>
             </div>
             <div class="post">
               <div class="name">
@@ -85,9 +84,9 @@
               </div>
               <img src="images/03ae2675-ddd8-44a4-93f0-798550cb8c4b.jpg" />
               <div class="reactions">
-                <i class="fa-solid fa-heart" id="icon2" onclick="increment(2)"></i>
-                <i class="fa-solid fa-comment "></i>
-                <i class="fa-solid fa-bookmark"></i>
+                <i class="far fa-heart" id="icon2" onclick="increment(2)"></i>
+                <i class="far fa-comment "></i>
+                <i class="far fa-bookmark"></i>
               </div>
               <p><span id="count2">0</span></p>
             </div>
@@ -98,12 +97,26 @@
               </div>
               <img src="images/2019-Ford-GT-PPF-Sunset.jpg" />
               <div class="reactions">
-                <i class="fa-solid fa-heart" id="icon3" onclick="increment(3)"></i>
-                <i class="fa-solid fa-comment "></i>
-                <i class="fa-solid fa-bookmark"></i>
+                <i class="far fa-heart" id="icon3" onclick="increment(3)"></i>
+                <i class="far fa-comment "></i>
+                <i class="far fa-bookmark"></i>
               </div>
-              <p><span id="count3">25</span></p>
+              <p><span id="count3">0</span></p>
             </div>
+            <div class="post">
+              <div class="name">
+                <a href="">Brain jotter</a>
+                <p>2 hours ago</p>
+              </div>
+              <video src="videos/Download.mp4" controls></video>
+              <div class="reactions">
+                <i class="far fa-heart" id="icon4" onclick="increment(4)"></i>
+                <i class="far fa-comment "></i>
+                <i class="far fa-bookmark"></i>
+              </div>
+              <p><span id="count4">0</span></p>
+            </div>
+          </div>
             <div class="post">
               <div class="name">
                 <a href="">Sarah Smith</a>
@@ -111,22 +124,22 @@
               </div>
               <img src="images/10-Most-Expensive-Cars-of-Mercedes-Benz.jpeg"/>
               <div class="reactions">
-                <i class="fa-solid fa-heart" id="icon4" onclick="increment(4)"></i>
-                <i class="fa-solid fa-comment "></i>
-                <i class="fa-solid fa-bookmark"></i>
+                <i class="far fa-heart" id="icon5" onclick="increment(5)"></i>
+                <i class="far fa-comment "></i>
+                <i class="far fa-bookmark"></i>
               </div>
-              <p><span id="count4">50</span></p>
+              <p><span id="count5">0</span></p>
             </div>
           </div>
       
       
       <footer>
-        <a href="index.html"><i class="fa-solid fa-home fa-2x"></i></a>
+        <a href="index.html"><i class="fas fa-home fa-2x"></i></a>
         <p><span id="count"></span></p>
-        <a href=""><i class="fa-solid fa-search fa-2x"></i></a>
-        <a href="" id="plus"><i class="fa-solid fa-circle-plus fa-3x"></i></a>
-        <a href=""><i class="fa-solid fa-bell fa-2x"></i></a>
-        <a href=""><i class="fa-solid fa-circle-user fa-2x"></i></a>
+        <a href=""><i class="fas fa-search fa-2x"></i></a>
+        <a href="" id="plus"><i class="fas fa-plus-circle fa-3x fa-beat"></i></a>
+        <a href=""><i class="fas fa-bell fa-2x"></i></a>
+        <a href=""><i class="fas fa-user-circle fa-2x"></i></a>
       </footer>
    
 </body>
