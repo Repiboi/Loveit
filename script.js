@@ -33,11 +33,11 @@ function increment(postNumber) {
   var count = parseInt(countElement.innerHTML);
 
   if ( count === 0 && iconElement.classList.contains("yellow")) {
-    count++;
+    count--;
     countElement.innerHTML = count;
     iconElement.classList.add("yellow");
   } else {
-    count--;
+    count++;
     countElement.innerHTML = count;
     iconElement.classList.remove("yellow");
   }
